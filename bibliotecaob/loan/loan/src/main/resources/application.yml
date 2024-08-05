@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: loan-service 
+  cloud:
+    netflix:
+      eureka:
+        client:
+          serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+        instance:
+          hostname: localhost
+          prefer-ip-address: true

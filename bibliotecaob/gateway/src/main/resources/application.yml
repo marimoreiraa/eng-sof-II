@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: student-service
+          uri: http://localhost:8081 # Substitua pela porta do seu serviço
+          predicates:
+            - Path=/student-service/**
+
